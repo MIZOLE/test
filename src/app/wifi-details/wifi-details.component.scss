@@ -1,0 +1,73 @@
+
+body, h2{
+    
+    background: transparent;
+    font-family: 'Kristen ITC';
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+.box-area{
+    width: 800px
+}
+
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+
+::placeholder{
+  font-family: 'Kristen ITC';
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+
+.btn-add-wifi{
+  //set the color to green, matching the set icon
+  background-color: #04AA6D; 
+  border: none;
+  color: white;
+  padding: 15px 140px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+  font-family: 'Kristen ITC';
+  font-weight: 600;
+
+  border-radius: 15px;
+}
+
+select, option {
+  color: red;
+  font-family: 'Kristen ITC';
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+/*------------ Mobile ------------*/
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 0 10px;
+
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
+}

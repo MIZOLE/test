@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'As-Connecte';
+
+
+  useVoucher(code:any){
+    console.log(code)
+    // localStorage
+  }
 }

@@ -28,6 +28,7 @@ import { SigninComponent } from './signin/signin.component';
 import { SupportComponent } from './support/support.component';
 import { BodyComponent } from './body/body.component';
 import { FindNearbyComponent } from './find-nearby/find-nearby.component';
+import { ViewVoucherComponent } from './view-voucher/view-voucher.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,8 @@ import { FindNearbyComponent } from './find-nearby/find-nearby.component';
     SupportComponent,
     BodyComponent, 
     FindNearbyComponent
+    BodyComponent,
+    ViewVoucherComponent
   ],
   imports: [
     BrowserModule,

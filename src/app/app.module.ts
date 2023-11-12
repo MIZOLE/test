@@ -42,7 +42,7 @@ import { ViewVoucherComponent } from './view-voucher/view-voucher.component';
     SigninComponent,
     SupportComponent,
     BodyComponent, 
-    FindNearbyComponent
+    FindNearbyComponent,
     BodyComponent,
     ViewVoucherComponent
   ],

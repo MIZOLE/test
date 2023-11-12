@@ -1,0 +1,37 @@
+<app-nav-bar></app-nav-bar>
+<hr class="mt-0">
+<div class="container">
+    <div class="d-flex">
+        <div class="col-6 d-flex">
+            <div class="card w-100 mt-2 mr" *ngFor="let item of items">
+                <div class="container d-flex mt-2" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar mt-2 mr" viewBox="0 0 16 16">
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                  </svg> 
+                  <div class="con">
+                    <p class="m-0 text-secondary" style="margin-left: 10px; font-size: 13px;">Voucher Code</p>
+                    <p class="m-0" style="margin-left: 10px; font-size: 13px;">{{item.voucher}}</p>
+        
+                  </div>
+        
+                </div>
+                <hr class="mt-0">
+                <div class="container d-flex justify-content-space-between">
+                    <div class="con d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar mr" viewBox="0 0 16 16">
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                      </svg> 
+                      <p class="m-0" style="margin-left: 10px; font-size: 13px;">Exp {{item.exp}}</p>
+            
+                    </div>   
+                    <div class="con" style="width: 130px;">
+                        1  X {{item.status}}
+                    </div>
+                </div>
+                <div class="card-header text-center p-0 mt-2 ">
+                    <p class="mt-1">Details Voucher</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+
+
+.footer {
+  background-color: white;
+  z-index: 1000;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+::placeholder{
+  padding: auto;
+  font-size: 17px;
+}
+.loadvoucher {
+  position: relative;
+  top: 100px;
+}

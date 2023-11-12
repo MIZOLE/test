@@ -4,12 +4,20 @@
   </div>
 
 <div class="wrapper">
-  <div class="card">
+  <div class="card "  *ngFor="let item of voucherItems">
       <input type="checkbox" id="card1" class="more" aria-hidden="true">
       <div class="content">
           <div class="front" style="background-image: url('../../assets/images/background.png')">
+
               <div class="inner">
-                  <h2>R5</h2>
+                <div class="d-flex justify-content-end">
+                    <div class="btn bg-dark pos text-white" (click)="saveVoucher(item)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                          </svg>
+                    </div>
+                </div>
+                  <h2>{{item.price}}</h2>
                   
                   <label for="card1" class="button" aria-hidden="true">
                       Details
@@ -20,77 +28,14 @@
               <div class="inner">
                  
                   <div class="description">
-                    <p> Price: R5</p>
-                    <p> Data: 500MB</p>
-                    <p> Valid: 24 HOURS</p>
+                    <p> Price: {{item.price}}</p>
+                    <p> Data: {{item.data}}</p>
+                    <p> Valid: {{item.exp}}</p>
                   </div>
                   <!-- <div class="location">Warsaw, Poland</div> -->
                   <!-- <div class="price">38€ / day</div> -->
                   <label for="card1" class="button return" aria-hidden="true">
                     <img src="../../assets/images/back-svgrepo-com.svg" style="width: 50px; height: 30px;" alt="">
-                  </label>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="card">
-      <input type="checkbox" id="card2" class="more">
-      <div class="content">
-          <div class="front" style="background-image: url('../../assets/images/background.png')">
-              <div class="inner">
-                  <h2>R15</h2>
-                 
-                  <label for="card2" class="button" aria-hidden="true">
-                      Details
-                  </label>
-              </div>
-          </div>
-          <div class="back">
-              <div class="inner">
-                  
-                     
-              
-                  <div class="description">
-                    <p> Price: R15</p>
-                    <p> Data: 1GB</p>
-                    <p> Valid: 3 DAYS</p>
-                  </div>
-                  <!-- <div class="location">Warsaw, Poland</div> -->
-                  <!-- <div class="price">42€ / day</div> -->
-                  <label for="card2" class="button return" aria-hidden="true">
-                    <img src="../../assets/images/back-svgrepo-com.svg" style="width: 50px; height: 30px;" alt="">
-                  </label>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="card">
-      <input type="checkbox" id="card3" class="more">
-      <div class="content">
-          <div class="front" style="background-image: url('../../assets/images/background.png')">
-              <div class="inner">
-                  <h2>R25</h2>
-                 
-                  <label for="card3" class="button" aria-hidden="true">
-                      Details
-                  </label>
-              </div>
-          </div>
-          <div class="back">
-              <div class="inner">
-                 
-                  <div class="description">
-                    <!-- <h3>Details</h3> -->
-                      <p> Price: R50</p>
-                      <p> Data: 5GB</p>
-                      <p> Valid: 7 DAYS</p>
-
-                      
-                  </div>
-                  <!-- <div class="location">Cracow, Poland</div> -->
-                  <!-- <div class="price">60€ / day</div> -->
-                  <label for="card3" class="button return" aria-hidden="true">
-                      <img src="../../assets/images/back-svgrepo-com.svg" style="width: 50px; height: 30px;" alt="">
                   </label>
               </div>
           </div>

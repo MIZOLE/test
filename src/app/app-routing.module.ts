@@ -9,6 +9,7 @@ import { BodyComponent } from './body/body.component';
 import { SupportComponent } from './support/support.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WifiDetailsComponent } from './wifi-details/wifi-details.component';
+import { ViewVoucherComponent } from './view-voucher/view-voucher.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/wifi-details', pathMatch: 'full' },
@@ -22,6 +23,8 @@ const routes: Routes = [
   { path: 'loadvoucher', component: LoadvoucherComponent },
   { path: 'change-password', component: ChangePasswordComponent },
   { path: 'wifi-details', component: WifiDetailsComponent },
+  { path: 'wifiview', component: ViewVoucherComponent },
+
 ];
 
 @NgModule({

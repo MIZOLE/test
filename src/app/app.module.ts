@@ -27,6 +27,7 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
 import { SigninComponent } from './signin/signin.component';
 import { SupportComponent } from './support/support.component';
 import { BodyComponent } from './body/body.component';
+import { ViewVoucherComponent } from './view-voucher/view-voucher.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { BodyComponent } from './body/body.component';
     ChangePasswordComponent,
     SigninComponent,
     SupportComponent,
-    BodyComponent
+    BodyComponent,
+    ViewVoucherComponent
   ],
   imports: [
     BrowserModule,

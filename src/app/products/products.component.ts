@@ -20,7 +20,7 @@ export class ProductsComponent {
     item.status = "Not Used"
   
     localStorage.setItem("voucher",JSON.stringify(item))
-    console.log(item)
+    alert("Voucher Purchase, Enjoy")
 
   }
 

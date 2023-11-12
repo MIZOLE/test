@@ -36,4 +36,8 @@ flip: string = 'inactive';
     this.flip = (this.flip == 'inactive') ? 'active' : 'inactive';
   }
 
+  useVoucher(code:any){
+    alert("Login Successful, Enjoy")
+  }
+
 }

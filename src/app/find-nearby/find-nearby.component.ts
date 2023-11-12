@@ -65,12 +65,12 @@ export class FindNearbyComponent  implements OnInit{
         });
   
          
-        // marker.addListener('click', (event: any) => {
-        //   infoWindow.setPosition(location);
-        //   infoWindow.setContent("Your Location.");
-        //   infoWindow.open(map);
-        //   console.log(event.latLng.toJSON())
-        // })
+        marker.addListener('click', (event: any) => {
+          infoWindow.setPosition(location);
+          infoWindow.setContent("Your Location.");
+          infoWindow.open(map);
+          console.log(event.latLng.toJSON())
+        })
   
         // marker.addListener('dragend', (event: any) => {
         //   infoWindow.setPosition(location);
@@ -80,10 +80,10 @@ export class FindNearbyComponent  implements OnInit{
         // }) 
   
         const locations = [
-          {lat:-33.92197115348429, lng:18.425460550904013},
-          {lat:-33.904470, lng:18.416372},
-          {lat:-33.907479, lng:18.412874},
-          {lat:-33.904487, lng:18.418668}
+          {name: "GSB", lat:-33.92197115348429, lng:18.425460550904013},
+          {name: "Absa", lat:-33.904470, lng:18.416372},
+          {name: "PhilipV", lat:-33.907479, lng:18.412874},
+          {name: "Rea", lat:-33.904487, lng:18.418668}
         ]
   
         for(let loc of locations){
@@ -102,7 +102,13 @@ export class FindNearbyComponent  implements OnInit{
           content:beachFlagImg
   
         });
-          console.log(loc.lat)
+          
+        marker.addListener('click', (event: any) => {
+          infoWindow.setPosition(loc);
+          infoWindow.setContent(loc.name);
+          infoWindow.open(map);
+          console.log(event.latLng.toJSON())
+        })
         }
   
         

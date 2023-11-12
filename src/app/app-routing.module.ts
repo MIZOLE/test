@@ -9,9 +9,10 @@ import { BodyComponent } from './body/body.component';
 import { SupportComponent } from './support/support.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WifiDetailsComponent } from './wifi-details/wifi-details.component';
+import { FindNearbyComponent } from './find-nearby/find-nearby.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/wifi-details', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 
   { path: 'home', component: HomeComponent },
   { path: 'dashboard', component: DashboardComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'loadvoucher', component: LoadvoucherComponent },
   { path: 'change-password', component: ChangePasswordComponent },
   { path: 'wifi-details', component: WifiDetailsComponent },
+  { path: 'find-nearby', component: FindNearbyComponent }
 ];
 
 @NgModule({

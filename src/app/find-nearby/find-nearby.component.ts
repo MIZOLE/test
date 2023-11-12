@@ -81,9 +81,9 @@ export class FindNearbyComponent  implements OnInit{
   
         const locations = [
           {name: "GSB", lat:-33.92197115348429, lng:18.425460550904013},
-          {name: "Absa", lat:-33.904470, lng:18.416372},
+          {name: "African Bank", lat:-33.904470, lng:18.416372},
           {name: "PhilipV", lat:-33.907479, lng:18.412874},
-          {name: "Rea", lat:-33.904487, lng:18.418668}
+          {name: "ReaHouse", lat:-33.904487, lng:18.418668}
         ]
   
         for(let loc of locations){

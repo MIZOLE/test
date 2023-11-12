@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewVoucherComponent implements OnInit{
    items:any = [ 
-    {voucher:"234j8uak9", exp: "20 Dec 2024" ,status:"Used"}
+    {voucher:"234j8uak9", exp: "16 Nov 2023" ,status:"Used"}
   ]
 
   ngOnInit(): void {
@@ -19,6 +19,10 @@ export class ViewVoucherComponent implements OnInit{
     }
 
     // console.log(items)
+  }
+
+  useVoucher(code:any){
+    alert("Login Successful, Enjoy")
   }
 
   

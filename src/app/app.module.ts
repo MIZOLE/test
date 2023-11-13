@@ -13,6 +13,9 @@ import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSelectModule} from '@angular/material/select';
 
+
+import { NgxScannerQrcodeModule } from 'ngx-scanner-qrcode';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
@@ -29,6 +32,7 @@ import { SupportComponent } from './support/support.component';
 import { BodyComponent } from './body/body.component';
 import { FindNearbyComponent } from './find-nearby/find-nearby.component';
 import { ViewVoucherComponent } from './view-voucher/view-voucher.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +48,8 @@ import { ViewVoucherComponent } from './view-voucher/view-voucher.component';
     BodyComponent, 
     FindNearbyComponent,
     BodyComponent,
-    ViewVoucherComponent
+    ViewVoucherComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -64,6 +69,7 @@ import { ViewVoucherComponent } from './view-voucher/view-voucher.component';
     MatCardModule,
     HttpClientModule,
     MatSelectModule,
+    NgxScannerQrcodeModule
   ],
   providers: [],
   bootstrap: [AppComponent],

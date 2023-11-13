@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {QRCode} from 'qrcode'
 
 @Component({
   selector: 'app-view-voucher',
@@ -17,6 +18,16 @@ export class ViewVoucherComponent implements OnInit{
       const parsedItem = JSON.parse(item);
       this.items.push(parsedItem);
     }
+
+    // QRCode.toDataURL('65789032').then((url:any) => {
+    //   console.log(url);
+    // }).catch((error: any) => {
+    //   console.log(error);
+    // })
+
+
+var QRCode = require('qrcode')
+
 
     // console.log(items)
   }
